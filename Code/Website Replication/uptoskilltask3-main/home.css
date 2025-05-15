@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home_nav>#nav_logo{
+
+/* background-color: #63E6BE; */
+position:absolute;
+top: 10px;
+left: 60px;
+
+}
+.home_nav{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 0px 60px 0px 60px;
+
+}
+
+.home_nav>.btn{
+    padding: 10px;
+    margin: 10px;
+    background-color: grey;
+    border: none;
+    font-weight: 400;
+    color: white;
+    font-size: medium;
+    border-radius: 10px;
+}
+.home_nav>.btn:hover{
+    cursor: pointer;
+
+}
+.heading{
+    background-image:url('homeuptoskills.png');
+    background-repeat: no-repeat;
+    width:100%;
+    min-height:600px;
+    display: flex;
+    flex-direction: column;
+    background-position: right;
+    padding: 90px ;
+    /* margin: 0 auto; */
+    justify-content: flex-start;
+    /* background-color: #63E6BE; */
+ 
+    
+    
+}
+.heading>h4{
+    color: rgb(45, 168, 168);
+    padding: 1px 10px 1px 20px ;
+    border-left: 2px solid orangered;
+}
+.heading>#txt{
+    /* padding: 20px; */
+    font-size: 4rem;
+}
+.heading>.home_btn>.btn{
+    background-color: orangered;
+    padding: 1em;
+    border: none;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    margin:50px 20px 20px 1px;
+}
+.home_msg{
+    background-color: orangered;
+    padding:40px;
+    margin: 80px;
+    font-size: large;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+
+}
+.home_btn>.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid orangered;
+    color: #2dbbfd;
+
+}
+.info_container{
+
+    background-color:rgb(27, 202, 202);
+    display: flex;
+   
+    justify-content:flex-start;
+    /* flex-wrap: wrap; */
+    /* grid-template-columns: auto auto auto auto; */
+    padding: 2rem;
+    
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    
+}
+#myModal{
+    padding-top: 100px;padding-right: 400px;
+    width: 100%;
+    padding-left: 300px;
+    
+}
+.job-detail{
+    margin-bottom: 10px;
+}
+.logo{
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    border-radius: 50%;
+}
+.job-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 2px 2px 2px grey;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+.job{
+    text-align: left;
+    flex: 1;
+}
+.info_container>.cols>a{
+    color: white;
+    text-decoration: solid;
+    font-weight: bold;
+    text-decoration: 2px underline solid;
+}
+.fa-solid{
+     /* background-color: rgb(230, 217, 217); */
+     padding:2em;
+     font-size: 3em;
+    
+     background-image: url(https://uptoskills.com/wp-content/uploads/2019/09/icon_bg-01.png);
+    /* border-radius: 20px; */
+    background-repeat: no-repeat;
+    background-position: top;
+    
+     color: #63E6BE;
+     background-size: contain;
+     
+     
+}
+.fa-solid:hover{
+    color:orangered;
+    transition: color 0.3s ease-in-out;
+}
+.cols
+{   
+    /* background-color: #63E6BE; */
+    /* border: 1px solid black; */
+    padding: 20px;
+    margin: 20px;
+    line-height: 2em;
+    color: white;
+
+}
+
+@media only screen and (max-width:1000px) {
+    .info_container{
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .home_nav>.btn{
+        padding: 7px;
+        background-color: orangered;
+    }
+    
+
+    
+}
+@media only screen and (max-width: 768px) {
+    .home_nav {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .home_nav>img{
+        width:0px;
+    }
+    .heading{
+        background-image: none;
+       background-size: contain;
+       min-height: 400px;
+       padding: 50px;
+    }
+    .info_container {
+        flex-direction: column;
+        text-align: flex-start;
+        padding: 20px;
+    }
+    
+}
+@media only screen and (max-width: 360px) {
+    .heading {
+        background-size: contain;
+        min-height: 300px;
+        padding: 20px;
+    }
+    .heading>.home_btn>.btn{
+        padding: 0.5em;
+        font-size: small;
+        flex-direction: row;
+    }
+    .home_btn>.btn{
+        padding: 0em;
+        font-size: small;
+        margin-top: 80px;
+    }
+    .heading > #txt {
+        font-size: 2rem;
+        text-align: left;
+    }
+    .home_msg{
+      margin: 20px;
+    
+    }
+    .home_nav>.btn{
+        margin: 2px;
+        font-size: x-small;
+        font-weight: 100;
+    }
+    .home_nav{
+        margin: 11px;
+    }
+    
+}
+
